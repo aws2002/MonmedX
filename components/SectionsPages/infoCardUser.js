@@ -3,6 +3,8 @@ import { BiMap } from "react-icons/bi";
 import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
 
 import Image from "next/image";
+import DateTime from "../Tools/DateTime";
+import Clock from "../Tools/Clock";
 export default function InfoCardUser() {
   return (
     <section className="InfoCardUser">
@@ -26,16 +28,16 @@ export default function InfoCardUser() {
           1081 Burrard St, Vancouver, BC V6Z
         </p>
         <div className=" grid grid-cols-12 mt-2">
-          <div className=" col-span-5">
+          <div className=" col-span-7">
             <p className="font-medium">
               <AiOutlineCalendar className=" inline-block text-xl -mt-1 mr-1" />
-              12 Dec 20,
+              <DateTime/>
             </p>
           </div>
           <div className=" col-span-5">
             <p className="font-medium">
               <AiOutlineClockCircle className=" inline-block text-xl -mt-1 mr-1" />
-              8:03 am
+              <Clock/>
             </p>
           </div>
         </div>
