@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
-
-export default function Clock() {
-    const time =new Date().toLocaleTimeString()
-    const [currentTime,setCurrentTime]=useState(time)
-    const updateTime=()=>{
-        const time =new Date().toLocaleTimeString()
-        setCurrentTime(time)
-    }
-    setInterval(updateTime,1000)
+import { useState, useEffect } from "react";
+function Clock() {
+  const [dateState, setDateState] = useState(new Date());
+  useEffect(() => {
+    setInterval(() => setDateState(new Date()), 1000);
+  }, []);
   return (
-    <span>{currentTime}</span>
-  )
+    <span>
+      {dateState.toLocaleString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+      })}
+    </span>
+  );
 }
+export default Clock;

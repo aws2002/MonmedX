@@ -1,7 +1,6 @@
 import React from "react";
 import { BiMap } from "react-icons/bi";
 import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
-
 import Image from "next/image";
 import DateTime from "../Tools/DateTime";
 import Clock from "../Tools/Clock";
