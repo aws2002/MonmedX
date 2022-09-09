@@ -30,3 +30,36 @@
     background: rgba(0, 0, 0, 0.336);
   }
 }
+.card {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card:hover:before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  background-image: linear-gradient(53.12deg, #2C32C6 2.55%, #FF72AD 51.37%, #F4CC3E 88.58%);
+  height: 150%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  inset: 5px;
+  border-radius: 15px;
+}
+

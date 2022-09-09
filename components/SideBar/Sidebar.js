@@ -40,7 +40,7 @@ const Sidebar = () => {
   );
 
   const wrapperClasses = classNames(
-    "h-screen px-2 pb-3 flex pt-3 justify-between flex-col bg-main text-white",
+    "h-screen px-2 pb-3 fixed z-[1000] flex pt-3 justify-between flex-col bg-main text-white",
     {
       ["w-56"]: !toggleCollapse,
       ["w-16"]: toggleCollapse,
@@ -74,7 +74,7 @@ const Sidebar = () => {
     >
       <div className="flex flex-col">
         {toggleCollapse && (
-          <div className="flex items-center justify-between relative">
+          <div className="flex  items-center justify-between relative">
             <button
               className={collapseIconClasses}
               onClick={handleSidebarToggle}
