@@ -4,7 +4,9 @@ import Link from "next/link";
 export default function ActiveLink({ children, href }) {
   const router = useRouter();
   const style = {
-    background:router.asPath === href ? "#241" : ""
+    background:router.asPath === href ? "#2BBEB8" : null,
+    color:router.asPath === href ? "#fff" : "#989898",
+    width:"100%"
   };
   const hendleClick = (e) => {
     e.preventDefault();
@@ -13,9 +15,9 @@ export default function ActiveLink({ children, href }) {
 
   return (
     <Link href={href}>
-      <a onClick={hendleClick} style={style}>
+      <div onClick={hendleClick}  style={style}>
         {children}
-      </a>
+      </div>
     </Link>
   );
 }

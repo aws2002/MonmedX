@@ -9,3 +9,24 @@
   box-sizing: border-box;
 }
 
+.input_text{
+  @apply w-full py-2 pl-10 pr-4 border rounded-lg bg-[#F0F0F0] focus:ring-1 ring-black focus:bg-white;
+  @apply focus:outline-none border-none
+}
+
+.shadow-box{
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+}
+
+.button-1{
+  @apply border rounded-md bg-[#2BBEB8] text-white px-4 font-medium text-sm py-2;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: #fff;
+
+  &-thumb {
+    background: rgba(0, 0, 0, 0.336);
+  }
+}
