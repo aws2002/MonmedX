@@ -22,7 +22,7 @@ export default function InfoCardUser() {
           Dr. Audrey Graham
         </h1>
         <p className=" mt-3 font-medium">
-          <BiMap className=" inline-block text-xl -mt-1 mr-1" />
+          <BiMap className=" inline-block text-lg -mt-1 mr-1" />
           1081 Burrard St, Vancouver, BC V6Z
         </p>
         <div className=" grid grid-cols-12 mt-2">
