@@ -21,10 +21,10 @@ export default function Appointments() {
           {[{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }].map(
             (item) => (
               <div
-                className=" grid grid-cols-12 px-5 py-[11px]  border-b-2"
+                className=" grid grid-cols-12 lg:px-5 px-3 py-[11px]  border-b-2"
                 key={item.id}
               >
-                <div className=" lg:col-span-4 col-span-6 my-auto">
+                <div className="lg:col-span-4 col-span-6 lg:order-1 my-auto">
                   <div className=" grid grid-cols-12 gap-x-2">
                     <div className=" lg:col-span-2 col-span-4 flex items-center">
                       <Image
@@ -35,29 +35,29 @@ export default function Appointments() {
                         alt=""
                       />
                     </div>
-                    <div className="lg:col-span-8 col-span-8 ml-2">
-                      <h2 className=" font-bold text-lg">Joson Smith</h2>
+                    <div className="col-span-8 lg:ml-2 ml-0">
+                      <h2 className=" font-bold lg:text-lg text-sm">Joson Smith</h2>
                       <p className=" text-sm text-[#8A8A8A]">
-                        jason45@gmail.com
+                        test@gmail.com
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className=" lg:col-span-2 col-span-12 my-auto">
+                <div className=" lg:col-span-2 col-span-6 my-auto lg:order-2 order-4 lg:mt-0 mt-3">
                   <span className=" inline-block text-[#8A8A8A]">Doctor</span>
                   <p className=" font-medium">Dr. Audrey Smith</p>
                 </div>
-                <div className=" lg:col-span-3 col-span-6 my-auto">
+                <div className=" lg:col-span-3 col-span-6 my-auto lg:order-3 order-5 lg:mt-0 mt-3">
                   <span className=" inline-block text-[#8A8A8A]">Time</span>
                   <p className=" font-medium">9:30 - 10:00 am est</p>
                 </div>
-                <div className=" lg:col-span-1 col-span-full my-auto">
+                <div className=" lg:col-span-1 col-span-3 m-auto lg:order-4 order-2">
                   <span className=" font-medium">
                     <AiFillVideoCamera className="text-[#8A8A8A] -mt-1 inline-block mr-2" />
                     FUP
                   </span>
                 </div>
-                <div className=" lg:col-span-2 col-span-full m-auto">
+                <div className="lg:col-span-2 col-span-3 m-auto lg:order-5 order-3">
                   <button className="button-1">Check-in</button>
                 </div>
               </div>

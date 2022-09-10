@@ -19,7 +19,7 @@
 }
 
 .button-1{
-  @apply border rounded-md bg-[#2BBEB8] text-white px-4 font-medium text-sm py-2;
+  @apply border rounded-md bg-[#2BBEB8] text-white lg:px-4 px-2 font-medium text-xs lg:text-sm py-2;
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +32,7 @@
 }
 .card {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 
 .card:hover:before {
@@ -60,6 +60,6 @@
   position: absolute;
   background: #fff;
   inset: 5px;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
