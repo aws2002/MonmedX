@@ -32,13 +32,6 @@ const menuItems = [
 const Sidebar = () => {
   const [toggleCollapse, setToggleCollapse] = useState(true);
 
-  const router = useRouter();
-
-  const activeMenu = useMemo(
-    () => menuItems.find((menu) => menu.link === router.pathname),
-    [router.pathname]
-  );
-
   const wrapperClasses = classNames(
     "h-screen px-2 pb-3 fixed z-[1000] flex pt-3 justify-between flex-col bg-main text-white",
     {
@@ -56,10 +49,7 @@ const Sidebar = () => {
 
   const getNavItemClasses = (menu) => {
     return classNames(
-      "flex items-center cursor-pointer  rounded-lg w-full overflow-hidden whitespace-nowrap",
-      {
-        ["bg-light-lighter"]: activeMenu.id === menu.id,
-      }
+      "flex items-center cursor-pointer  rounded-lg w-full overflow-hidden whitespace-nowrap"
     );
   };
 
