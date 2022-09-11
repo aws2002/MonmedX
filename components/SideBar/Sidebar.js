@@ -1,6 +1,4 @@
 import classNames from "classnames";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useState, useMemo } from "react";
 import { FiHome } from "react-icons/fi";
 import { BiMenuAltRight, BiUserPin, BiBookAlt } from "react-icons/bi";
