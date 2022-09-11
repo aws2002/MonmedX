@@ -13,7 +13,7 @@ export default function Home() {
     <Layout>
       <div className=" grid grid-cols-12 gap-x-4 mt-4">
         <div className=" lg:col-span-3 col-span-full">
-          <InfoCardUser />
+          <InfoCardUser/>
         </div>
         <div className=" lg:col-span-9 col-span-full pr-1">
           <Appointments />
