@@ -3,7 +3,6 @@ import Appointments from "../components/SectionsPages/Appointments";
 import CardHomePage from "../components/SectionsPages/CardHomePage";
 import InfoCardUser from "../components/SectionsPages/InfoCardUser";
 import { AiOutlineCalendar,  } from "react-icons/ai";
-import { TbUsers } from "react-icons/tb";
 import { BsReceipt, BsFillCalendar2DateFill } from "react-icons/bs";
 import { HiOutlineChat } from "react-icons/hi";
 import { TbClipboardText } from "react-icons/tb";
