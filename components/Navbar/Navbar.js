@@ -4,7 +4,7 @@ import { BiSearch } from "react-icons/bi";
 import { RiMenu4Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import MultilanguageBtn from "../Tools/MultilanguageBtn";
-
+import Image from "next/image";
 export default function Navbar() {
   return (
     <Popover>
@@ -48,11 +48,11 @@ export default function Navbar() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
+                  {/* <Image
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                     alt="Your Company"
-                  />
+                  /> */}
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 outline-none">
